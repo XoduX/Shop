@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <nav class="nav navFix">
+        <div class="upperNav">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+                <p class="logo-name">SwitchEye</p>
+            </div>
+            <form class="search">
+                <input type="search" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="navMenu">
+                <ul class="navItem">
+                    <li class="navList"><a href="index.html">Home</a></li>
+                    <li class="navList">Services</li>
+                    <li class="navList"><a href="hickvision.html">Products</a></li>
+                    <li class="navList">Affiliates</li>
+                    <li class="cart">
+                        <a href="#productsCartContID"><img src="images/cart.png" alt="" class="shopppingCart"></a>
+                        <p class="countitem"></p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <section class="hickvisionBanner">
+        <div class="hickvisionMotd">
+        </div>
+    </section>
+    <section class="displayProducts">
+        <div class="hickProductList">
+            <div class="hikProducts">
+                <!-- <div class="hikProduct">
+                    <div class="productUnder">
+                        <figure class="product-image">
+                            <img
+                                src="./images/hickvision.png"
+                                alt="popular labtops and computers"
+                            />
+                            <div class="product-over">
+                                <button
+                                    class="btn btn-small addToCart"
+                                    data-product-id="11"
+                                >
+                                    <i class="fas fa-cart-plus"></i>Add
+                                    to cart
+                                </button>
+                                <a
+                                    href="#"
+                                    class="btn btn-small"
+                                    >More Info</a
+                                >
+                            </div>
+                        </figure>
+                        <div class="product-summary">
+                            <h4 class="productName">DS-2CD2T55FWD-I5</h4>
+                            <span class="stars"></span>
+                            <p>
+                                5Mp H.265+ Darkfighter EXIR Bullet: 120dB WDR,HIK-Connect cloud,EXIR 50m Distance,4mm Lens,IP67,PoE, Built-in micro SD/SDHC/SDXC slot,
+                            </p>
+                            <h6 class="price">
+                                $<span class="priceValue">${data[i].price}</span>
+                            </h6>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="productsCart-container " id="productsCartContID">
+            <div class="producstOnCart">
+                <div class="top">
+                    <h3 class="title">Cart</h3>
+                    <span class="close" id="closeButton" >X</span>
+                </div>
+                <ul id="buyItems">
+                    <h4 class="empty">Your shopping cart is empty</h4>
+                    <!-- <li class="buyItem">
+                        <img src="Images/producs-images/Mobiles/galaxynote10.png">
+                        <div class="cartProductDetails">
+                            <h5>Products Name</h5>
+                            <h6>$199</h6>
+                            <div>
+                                <button>-</button>
+                                <span class="countOfProduct">1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+                <div class="footer">
+                    <div id="totalPrices"></div>
+                    <button class="btn payButton checkout hidden">Checkout!</button>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Affiliates</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem">Huawei</li>
+                    <li class="fListItem">Cisco</li>
+                    <li class="fListItem">Avaya</li>
+                    <li class="fListItem">Hikvision</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="./images/facebook.png" alt="" class="fIcon">
+                    <img src="./images/twitter.png" alt="" class="fIcon">
+                    <img src="./images/instagram.png" alt="" class="fIcon">
+                    <img src="./images/whatsapp.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@Team7 Kodego 2022.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+
+</body>
+</html>
