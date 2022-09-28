@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Urbanist' rel='stylesheet'>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    #navbar {
+       background-color: #051242;
+       
+    }
+    .nav-link {
+        color: #ffff;
+        
+        
+    }
+    body{
+        font-family: 'Urbanist', sans-serif;  
+        background-color: #051242;
+    }
+
+    .dropdown:hover{
+        background-color: #007bff;
+       
+    }
+    .dropdown-menu{
+        background-color: #051242; 
+    }
+    .dropdown-item:hover {
+        background-color: #007bff;
+    }
+    #nav-link {
+  display: inline-block;
+  position: relative;
+
+}
+
+#nav-link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.30s ease-out;
+}
+
+#nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+#col2 {
+  height: fit-content;
+  width:fit-content;
+  border-radius: 5px;
+  text-align: center;
+  color: #051242;
+  transition: 0.15s;
+  cursor: pointer;
+
+
+  
+}
+
+#col2:hover{
+ transform: scale(1.06);
+}
+#headerSw{
+  background-color: #051242;
+  color: white;
+
+}
+#headerSw1{
+  background-color: #051242;
+  color: white;
+  text-align: center;
+
+}
+#tablebook{
+  background-color: white;
+  border-radius: 5px;
+  width:auto;
+  margin: auto;
+  
+}
+#headerSw2{
+  text-align: center;}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: white;
+}
+
+
+
+
+
+  
+  
+</style>
+<body>
+
+  <div class="container-fluid p-4 mt-5" id="headerSw">
+    <h1>SwitchEye Services</h1>
+    <p>The service that you deserve</p>
+  </div>
+
+
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top shadow-lg" id="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)"> <img src="https://skylake28.github.io/team7/img/favico.png" alt="..." height="40"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item" id="nav-link">
+          <a class="nav-link active" href="javascript:void(0)">Home</a>
+        </li>
+        <li class="nav-item" id="nav-link">
+          <a class="nav-link active" href="javascript:void(0)">About Us</a>
+        </li>
+        <li class="nav-item" id="nav-link">
+          <a class="nav-link active" href="javascript:void(0)">Products</a>
+        </li>
+        
+        <li class="nav-item dropdown" id="dropdown">
+          <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item text-white" href="#">Structured Cabling</a></li>
+            <li><a class="dropdown-item text-white" href="#">Security Systems</a></li>
+            <li><a class="dropdown-item text-white" href="#">Wireless Network</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://raw.githubusercontent.com/XoduX/First-Bootstrap-Page/main/1.png" alt="Los Angeles" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Data Cabling</h5>
+        <p>Want to know more about data cabling swipe down!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://raw.githubusercontent.com/XoduX/First-Bootstrap-Page/main/3.png" alt="Chicago" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Data Cabling</h5>
+        <p>Want to know more about data cabling swipe down!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://raw.githubusercontent.com/XoduX/First-Bootstrap-Page/main/1.png" alt="New York" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Data Cabling</h5>
+        <p>Want to know more about data cabling swipe down!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+
+
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+<div class="container px-4" >
+  <div class="row gx-4">
+    <div class="col mt-4 ">
+     <div class="p-2 mt-4 border bg-light mb-4" id="col2">
+      <div class="p-2">
+        <span class="d-block font-weight-bold"><h2>What is Data Cabling?</h2></span>
+        <small><h3>Why is it necessary?</h3></small>
+     </div>
+    </div>
+
+    </div>
+    <div class="col mt-4 ">
+      <div class="p-2 mt-4 border bg-light mb-4" id="col2">
+        <div class="p-2">
+          <span class="d-block font-weight-bold"><p>
+            Data Cabling is a method of connecting multiple devices e.g PC's, Printers, CCTV cameras, servers within an IT network. There are essentially two types of data cable, copper and fibre, within these two types of cable there are different grades which ultimately result in different standards.
+          </p></span>
+         
+       </div>
+        
+        
+    
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid p-4 mt-5" id="headerSw1">
+  <h2>Book now!</h2>
+  <p>Together with our best technicians</p>
+</div>
+
+
+<table class="table table-borderless table-responsive card-1 p-4 ml-4" id="tablebook">
+<thead>
+<tr class="border-bottom">
+<th>
+<span class="ml-2">Time</span>
+</th>
+<th>
+<span class="ml-2">Technician</span>
+</th>
+
+<th>
+<span class="ml-2">Availability</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-bottom">
+<td>
+<div class="p-2">
+    <span class="d-block font-weight-bold">Tomorrow</span>
+    <small>2:30PM</small>
+</div>
+</td>
+<td>
+ <div class="p-2 d-flex flex-row align-items-center mb-2">
+    <img src="https://i.imgur.com/ZSkeqnd.jpg" width="40" class="rounded-circle">
+    <div class="d-flex flex-column ml-2">
+        <span class="d-block font-weight-bold">Jennifer john</span>
+        <small class="text-muted">Data cabling technician</small>
+    </div>
+</div>
+
+</td>
+
+<td>
+<div class="p-2 d-flex flex-column">
+    <span>Free</span>
+    
+</div>
+</td>
+
+</tr>
+
+
+
+
+
+<tr class="border-bottom">
+<td>
+<div class="p-2">
+    <span class="d-block font-weight-bold">Tomorrow</span>
+    <small>3:30PM</small>
+</div>
+</td>
+<td>
+ <div class="p-2 d-flex flex-row align-items-center mb-2">
+    <img src="https://i.imgur.com/C4egmYM.jpg" class="rounded-circle" width="40">           
+         <div class="d-flex flex-column ml-2">
+        <span class="d-block font-weight-bold">David Smith</span>
+        <small class="text-muted">Data cabling technician</small>
+    </div>
+</div>
+
+</td>
+
+<td>
+<div class="p-2 d-flex flex-column">
+    <span>Free</span>
+  
+</div>
+</td>
+
+</tr>
+
+
+
+
+<tr class="border-bottom">
+<td>
+<div class="p-2">
+    <span class="d-block font-weight-bold">Tomorrow</span>
+    <small>12:30PM</small>
+</div>
+</td>
+<td>
+ <div class="p-2 d-flex flex-row align-items-center mb-2">
+    <img src="https://i.imgur.com/0LKZQYM.jpg" class="rounded-circle" width="40">
+    <div class="d-flex flex-column ml-2">
+        <span class="d-block font-weight-bold">Emmily johnson</span>
+        <small class="text-muted">Data cabling technician</small>
+    </div>
+</div>
+
+</td>
+
+<td>
+<div class="p-2 d-flex flex-column">
+    <span>Free</span>
+  
+</div>
+</td>
+
+</tr>
+
+
+
+
+
+
+<tr class="border-bottom">
+<td>
+<div class="p-2">
+    <span class="d-block font-weight-bold">Tomorrow</span>
+    <small>1:30PM</small>
+</div>
+</td>
+<td>
+ <div class="p-2 d-flex flex-row align-items-center mb-2">
+    <img src="https://i.imgur.com/hczKIze.jpg" width="40" class="rounded-circle">
+    <div class="d-flex flex-column ml-2">
+        <span class="d-block font-weight-bold">Nick Jones</span>
+        <small class="text-muted">Data cabling technician</small>
+    </div>
+</div>
+
+</td>
+
+<td>
+<div class="p-2 d-flex flex-column">
+    <span>Free</span>
+ 
+</div>
+</td>
+
+</tr>
+
+
+
+</tbody>
+
+</table>
+
+
+</div>
+<div class="container mt-3" id="headerSw2">
+  
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Book Now
+  </button>
+</div>
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Notification</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="alert alert-success alert-dismissible">
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          <strong>Success!</strong> You've succesfully booked!
+        </div>
+        <div class="card bg-success text-white">
+          <div class="card-body">We're gonna notify you your schedule shortly!</div>
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+
+</html>
